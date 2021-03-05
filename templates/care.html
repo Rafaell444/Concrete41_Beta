@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/care.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Concrete41</title>
+</head>
+    <body>
+        <header class="header">
+           <div class=" inner-header" >
+             <div class="logo" ><a href="/"><img src="../static/CONCRETE%2041.png" alt="LOGO"></a></div>
+             <div class=" navigation">
+                    <ul>
+                        <li><a href="{{ url_for("flowerpot") }}" style="text-decoration: none">FLOWERPOT</a></li>
+                        <li><a href="{{ url_for("ashtray") }}" style="text-decoration: none">ASHTRAY</a> </li>
+                        <li><a href="{{ url_for("chess") }}" style="text-decoration: none">CHESS</a></li>
+                            <li><a href="{{ url_for("lamp") }}" style="text-decoration: none">LAMP</a></li>
+                        <li><a href="{{ url_for("sale") }}" style="text-decoration: none">SALE</a> </li>
+                        <li><a href="{{ url_for("about") }}" style="text-decoration: none">ABOUT US</a></li>
+                    </ul>
+             </div>
+       </div>
+    </header>
+
+     <div class="care"><h2>CARE INSTRUCTION</h2></div>
+
+        <div class="caretxt"><p>TEXT here</p></div>
+
+
+
+
+
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2>Quick Links</h2>
+                <a href="{{ url_for("terms") }}">Terms & Conditions</a>
+                <a href="{{ url_for("care") }}">Care Instruction</a>
+                <a href="{{ url_for("policy") }}">Privacy Policy</a>
+            </div>
+            <div class="footer-heading footer-2">
+                <h2>Contact Info</h2>
+                <a href="#" >+995 599 47 98 81</a>
+                <a href="#">info.concrete41@gmail.com</a>
+            </div>
+
+
+
+            <div class="footer-email-form">
+                <h2>Sign Up On Our Mailing List:  </h2>
+                <input type="email" placeholder="Enter Your Email Address" id="footer-email">
+                <input type="submit" value="Join" id="footer-email-btn">
+
+            </div>
+            <div class="footer-heading footer-4">
+
+                <div class="row"><a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a></div>
+                <div class="row"><a href="https://www.instagram.com/concrete.41/" class="fa fa-instagram" target="_blank"></a></div>
+                <div class="row"><a href="https://www.pinterest.com/Concrete41/_created/" class="fa fa-pinterest" target="_blank"></a></div>
+                <div class="row"><a href="https://www.facebook.com/Concrete41/" class="fa fa-facebook" target="_blank"></a></div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+<div class="footerbelow-container">
+    <div class="footerbelow">
+
+        <p>&#169;COPYRIGHT 2021,CONCRETE41</p>
+    </div>
+</div>
+
+    <script>
+        document.getElementById("footer-email-btn").addEventListener("click",function (){
+            let footer_email_data = document.getElementById("footer-email").value
+
+            $.post("/save_response",{"email_data": footer_email_data})
+
+
+
+            document.getElementById('footer-email').value='';
+
+            document.getElementById('footer-email').value="Submitted";
+
+            document.getElementById('footer-email').style.color = "green";
+
+
+
+        })
+
+
+
+
+    </script>
+
+
+    </body>
+</html>

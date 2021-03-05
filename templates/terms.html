@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/terms.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Concrete41</title>
+</head>
+    <body>
+        <header class="header">
+           <div class=" inner-header" >
+             <div class="logo" ><a href="/"><img src="../static/CONCRETE%2041.png" alt="LOGO"></a></div>
+             <div class=" navigation">
+                    <ul>
+                        <li><a href="{{ url_for("flowerpot") }}" style="text-decoration: none">FLOWERPOT</a></li>
+                        <li><a href="{{ url_for("ashtray") }}" style="text-decoration: none">ASHTRAY</a> </li>
+                        <li><a href="{{ url_for("chess") }}" style="text-decoration: none">CHESS</a></li>
+                            <li><a href="{{ url_for("lamp") }}" style="text-decoration: none">LAMP</a></li>
+                        <li><a href="{{ url_for("sale") }}" style="text-decoration: none">SALE</a> </li>
+                        <li><a href="{{ url_for("about") }}" style="text-decoration: none">ABOUT US</a></li>
+                    </ul>
+             </div>
+       </div>
+    </header>
+
+        <div class="termss"><h2>TERMS & CONDITIONS</h2></div>
+
+        <div class="deliv"><h2>DELIVERY</h2></div>
+
+        <div class="textdeliv"><p>Shipping cost is <span>5 GEL</span> throughout Tbilisi. When sending out of Tbilisi, the availability will becalculated according to the Georgian Post<br>Postal Calculator.</p></div>
+
+        <div class="returnp"><h2>RETURN OR REFUND POLICY</h2></div>
+
+        <div class="returntxt"><h2>CONCRETE 41 trusts that you will be satisfied with the merchandise you purchase through our channel.</h2></div>
+
+        <div class="returntxt1"><h2><br>However, if for any reason you need to return the goods, we are happy. We accept returns within <span>5 days</span> of receiving the item, please contact <br>us immediately at <span>info@concrete41.com</span> or by phone at <span>+995599479881</span></h2></div>
+
+        <div class="returntxt2"><h2><br>To be eligible for a refund, your item must be unused and in the same condition in which you received it. It should also be in the original packaging. <br>The fee for return shipping and processing is <span>8 GEL</span>. We will come to the first specified address and take it back.</h2></div>
+        <div class="returntxt3"><h2><br>If you request a refund, the purchase availability (including delivery fee) will be refunded to you once we <br>have received the returned item back and confirmed that it meets the above conditions.</h2></div>
+
+
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2>Quick Links</h2>
+                <a href="{{ url_for("terms") }}">Terms & Conditions</a>
+                <a href="{{ url_for("care") }}">Care Instruction</a>
+                <a href="{{ url_for("policy") }}">Privacy Policy</a>
+            </div>
+            <div class="footer-heading footer-2">
+                <h2>Contact Info</h2>
+                <a href="#">+995 599 47 98 81</a>
+                <a href="#">info.concrete41@gmail.com</a>
+            </div>
+            <div class="footer-email-form">
+                <h2>Sign Up On Our Mailing List:  </h2>
+                <input type="email" placeholder="Enter Your Email Address" id="footer-email">
+                <input type="submit" value="Join" id="footer-email-btn">
+
+            </div>
+            <div class="footer-heading footer-4">
+
+                <div class="row"><a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a></div>
+                <div class="row"><a href="https://www.instagram.com/concrete.41/" class="fa fa-instagram" target="_blank"></a></div>
+                <div class="row"><a href="https://www.pinterest.com/Concrete41/_created/" class="fa fa-pinterest" target="_blank"></a></div>
+                <div class="row"><a href="https://www.facebook.com/Concrete41/" class="fa fa-facebook" target="_blank"></a></div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+<div class="footerbelow-container">
+    <div class="footerbelow">
+
+        <p>&#169;COPYRIGHT 2021,CONCRETE41</p>
+    </div>
+</div>
+
+    <script>
+        document.getElementById("footer-email-btn").addEventListener("click",function (){
+            let footer_email_data = document.getElementById("footer-email").value
+
+            $.post("/save_response",{"email_data": footer_email_data})
+
+
+
+            document.getElementById('footer-email').value='';
+
+            document.getElementById('footer-email').value="Submitted";
+
+            document.getElementById('footer-email').style.color = "green";
+
+
+
+        })
+
+
+
+
+    </script>
+
+
+    </body>
+</html>

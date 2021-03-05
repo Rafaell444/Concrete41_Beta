@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/flowerpot.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Concrete41</title>
+</head>
+    <body>
+        <header class="header">
+           <div class=" inner-header" >
+
+
+             <div class="logo" ><a href="/"><img src="../static/CONCRETE%2041.png" alt="LOGO"></a></div>
+             <div class=" navigation">
+                   <ul>
+                        <li class="smths"><a href="{{ url_for("flowerpot") }}" style="text-decoration: none" class="lang" key="flowerpot">FLOWERPOT</a></li>
+                        <li class="smths"><a href="{{ url_for("ashtray") }}" style="text-decoration: none" class="lang" key="ashtray">ASHTRAY</a> </li>
+                        <li class="smths"><a href="{{ url_for("chess") }}" style="text-decoration: none" class="lang" key="chess">CHESS</a></li>
+                            <li class="smths"><a href="{{ url_for("lamp") }}" style="text-decoration: none" class="lang" key="lamp">LAMP</a></li>
+                        <li class="smths"><a href="{{ url_for("sale") }}" style="text-decoration: none" class="lang" key="sale">SALE</a> </li>
+
+                       <li><a href="{{ url_for("about") }}" style="text-decoration: none" class="lang" key="about us">ABOUT US</a></li>
+
+ <li class="trans"><a id="en" class="translate"><img src="../static/uk.png" alt = "enflag" width="40px" height="30px"></a></li>
+                       <li class="trans1"><a id="ka" class="translate"><img src="../static/Georgia.png" width="40px" height="30px" alt = "geoflag"></a></li>
+
+                    </ul>
+
+
+             </div>
+       </div>
+    </header>
+
+     <div class="abouts"><h2>FLOWERPOT</h2></div>
+
+        <div class="content-wrapper">
+
+
+            <div class="info-wrap">
+               <div class="info_img"> <img class="imgs" src="../static/qotanski.jpg" alt="IMAGE"></div>
+
+                <div class="info-content">
+                <div class="card-details"><h2 class="card-availability">Available Colors</h2> <div class="colors">
+                    <div class="color4"></div><div class="color5"></div><div class="color6"></div></div></div>
+
+                    <div class="card-details"><h2 class="price">Price</h2><h1 class="p">GEL 22,00,&#x20BE;</h1></div>
+                   <div class="card-details"><h2 class="code">Code</h2><h1 class="p">POT4</h1></div>
+                   <div class="card-details"><h2 class="size">Size</h2><h1 class="p">Height -20cm<br>Inner diameter-30cm<br>Outer diameter-33cm</h1></div>
+
+
+
+                    </div>
+    </div>
+             <div class="info-wrap">
+               <div class="info_img"> <img class="imgs" src="../static/qotanski.jpg" alt="IMAGE"></div>
+
+
+                <div class="info-content">
+                <div class="card-details"><h2 class="card-availability">Available Colors</h2> <div class="colors">
+                    <div class="color4"></div><div class="color5"></div><div class="color6"></div></div></div>
+
+                    <div class="card-details"><h2 class="price">Price</h2><h1 class="p">GEL 22,00,&#x20BE;</h1></div>
+                   <div class="card-details"><h2 class="code">Code</h2><h1 class="p">POT4</h1></div>
+                   <div class="card-details"><h2 class="size">Size</h2><h1 class="p">Height -20cm<br>Inner diameter-30cm<br>Outer diameter-33cm</h1></div>
+
+
+
+                    </div>
+
+
+    </div>
+
+
+         <div class="info-wrap">
+               <div class="info_img"> <img class="imgs" src="../static/qotanski.jpg" alt="IMAGE"></div>
+
+
+                <div class="info-content">
+                <div class="card-details"><h2 class="card-availability">Available Colors</h2> <div class="colors">
+                    <div class="color4"></div><div class="color5"></div><div class="color6"></div></div></div>
+
+                    <div class="card-details"><h2 class="price">Price</h2><h1 class="p">GEL 22,00,&#x20BE;</h1></div>
+                   <div class="card-details"><h2 class="code">Code</h2><h1 class="p">POT4</h1></div>
+                   <div class="card-details"><h2 class="size">Size</h2><h1 class="p">Height -20cm<br>Inner diameter-30cm<br>Outer diameter-33cm</h1></div>
+
+
+
+                    </div>
+    </div>
+
+
+             <div class="info-wrap">
+               <div class="info_img"> <img class="imgs" src="../static/qotanski.jpg" alt="IMAGE"></div>
+
+
+               <div class="info-content">
+
+
+                <div class="card-details"><h2 class="card-availability">Available Colors</h2> <div class="colors">
+                    <div class="color4"></div><div class="color5"></div><div class="color6"></div></div></div>
+
+                   <div class="card-details"><h2 class="price">Price</h2><h1 class="p">GEL 22,00,&#x20BE;</h1></div>
+                   <div class="card-details"><h2 class="code">Code</h2><h1 class="p">POT4</h1></div>
+                   <div class="card-details"><h2 class="size">Size</h2><h1 class="p">Height -20cm<br>Inner diameter-30cm<br>Outer diameter-33cm</h1></div>
+
+
+                    </div>
+    </div>
+
+
+        </div>
+
+
+
+
+
+
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2>Quick Links</h2>
+                <a href="{{ url_for("terms") }}">Terms & Conditions</a>
+                <a href="{{ url_for("care") }}">Care Instruction</a>
+                <a href="{{ url_for("policy") }}">Privacy Policy</a>
+            </div>
+            <div class="footer-heading footer-2">
+                <h2>Contact Info</h2>
+                <a href="#" >+995 599 47 98 81</a>
+                <a href="#">info.concrete41@gmail.com</a>
+            </div>
+
+
+
+            <div class="footer-email-form">
+                <h2>Sign Up On Our Mailing List:  </h2>
+                <input type="email" placeholder="Enter Your Email Address" id="footer-email">
+                <input type="submit" value="Join" id="footer-email-btn">
+
+            </div>
+            <div class="footer-heading footer-4">
+
+                <div class="row"><a href="https://www.youtube.com" class="fa fa-youtube" target="_blank"></a></div>
+                <div class="row"><a href="https://www.instagram.com/concrete.41/" class="fa fa-instagram" target="_blank"></a></div>
+                <div class="row"><a href="https://www.pinterest.com/Concrete41/_created/" class="fa fa-pinterest" target="_blank"></a></div>
+                <div class="row"><a href="https://www.facebook.com/Concrete41/" class="fa fa-facebook" target="_blank"></a></div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+<div class="footerbelow-container">
+    <div class="footerbelow">
+
+        <p>&#169;COPYRIGHT 2021,CONCRETE41</p>
+    </div>
+</div>
+
+    <script>
+        document.getElementById("footer-email-btn").addEventListener("click",function (){
+            let footer_email_data = document.getElementById("footer-email").value
+
+            $.post("/save_response",{"email_data": footer_email_data})
+
+            document.getElementById('footer-email').value="Submitted";
+
+            document.getElementById('footer-email').style.color = "green";
+
+
+
+        })
+
+
+
+
+    </script>
+
+
+
+    </body>
+</html>
